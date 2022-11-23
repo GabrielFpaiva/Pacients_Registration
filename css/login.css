@@ -1,0 +1,149 @@
+body {
+
+    padding: 0;
+
+    margin: 0;
+
+    background-color: #009879;
+
+}
+
+#login {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: 100vh;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.form {
+
+    background-color: rgba(255, 255, 255, 0.719);
+
+    padding: 40px;
+
+    border-radius: 7px;
+
+    width:300px;
+
+}
+
+.form-header {
+
+    padding-bottom: 50px;
+
+    opacity: 0.8;
+
+    color: #009879;
+
+}
+
+.form-header::after {
+
+    content: "";
+
+    width: 70px;
+
+    height: 1px;
+
+    background-color: #009879;
+
+    display: block;
+
+    margin-top: -17px;
+
+    margin-left: -5px;
+
+}
+
+
+.form-content label {
+
+    color: #009879;
+
+    font-size: 15px;
+
+
+}
+
+.form-content-area {
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding:10px;
+
+    
+
+}
+
+
+.form-content-area input {
+
+    margin-top: 10px;
+
+    padding:5px;
+
+    background-color: transparent;
+
+    border:none;
+
+    border-bottom: 2px solid #009879;
+
+    outline: none;
+
+    color: #000000;
+
+}
+
+.form-footer {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.form-footer .botao{
+
+    width: 100%;
+
+    height: 40px;
+
+    background-color: #70a0a0;
+
+    border:none;
+
+    color:#e1e1e1;
+
+    margin: 10px 0;
+
+    border-radius: 10px;
+
+}
+
+.form-footer .botao:hover{
+
+    background: #009879;
+}
+
+.form-footer a {
+
+    text-align: center;
+
+    font-size: 12px;
+
+    opacity: 0.8;
+
+    color: rgba(3, 97, 99, 0.616);
+
+    text-decoration: none;
+
+}
