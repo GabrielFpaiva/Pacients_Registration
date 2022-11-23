@@ -1,3 +1,10 @@
+<?php
+session_start();
+    if(!isset($_SESSION["usuario"])){
+        header("Location: login.php");    
+        exit;
+    }
+?>
 <!DOCTYPE html>
 <html>
 
@@ -10,7 +17,7 @@
 
 <body>
   
-   <form class="formulario" method="post" action="tabela.php">
+   <form class="formulario" method="post" action="table_pacients.php">
        <h1 class="title"><i class="icon icon-mail-1"></i>Cadastro de Pacientes</h1>
         
         <label class="label">
@@ -33,15 +40,16 @@
             <input type="number" step="0.01" name="altura" class="campo" placeholder="Digite a altura do paciente" required=""/>   
         </label>
         
-        <label  class="label"> 
-            
-            <input  type="hidden" name="acao" value="cadastrar"> 
-            <button type="submit" class="botao">Cadastrar</button>
+        <label class="label"> 
+        
+            <input type="hidden" name="acao" value="cadastrar"> 
+            <button  type="submit" class="botao"> Cadastrar </button>
+        
+        
         </label>
         
     </form>   
     <a href="exit.php">Sair</a>
-
 </body>
 
 </html>

@@ -1,3 +1,10 @@
+<?php
+session_start();
+    if(!isset($_SESSION["usuario"])){
+        header("Location: login.php");    
+        exit;
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,10 +15,10 @@
     <link rel="stylesheet" href="../css/table_pacients.css">
 </head>
 <body>
-  <h1>Tabela dos Pacientes</h1>
+  <h1 align="center">Tabela dos Pacientes</h1>
     <div class="bordered striped centered highlight responsive-table">
        <table class="table_style">
-            <thead>
+             <thead >
                 <tr>
                   <th>Nome</th>
                   <th>Idade</th>
@@ -19,7 +26,7 @@
                   <th>Altura</th>
                   <th>IMC</th>
                 </tr>
-            </thead>
+             </thead>
           <tbody>
            <?php
               $nome=[];
@@ -40,7 +47,7 @@
                 }
                 $imc=$peso/($altura*$altura);
               echo "  <tr class='active_row'>
-               <td>$nome</td>
+               <td align=>$nome</td>
                <td>$idade</td>
                <td>$peso</td>
                <td>$altura</td>
@@ -49,6 +56,9 @@
              ?>
           </tbody>
         </table>
+        <a  href="../php/register_pacient.php">
+          <input type="button" value="Cadastrar novo paciente" />
+        </a>    
     </div>
 </body>
 </html>
