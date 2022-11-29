@@ -1,7 +1,8 @@
 <?php
 session_start();
     if(!isset($_SESSION["usuario"])){
-        header("Location: login.php");    
+        echo"<script>alert('Efetue o login primeiro!');</script>";
+        echo'<script>window.location="login.php";</script>';
         exit;
     }
 ?>

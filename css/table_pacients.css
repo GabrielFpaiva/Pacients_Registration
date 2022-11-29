@@ -1,13 +1,55 @@
 .table_style {
     border-collapse: collapse;
-    margin: 25px 0;
     font-size: 0.9em;
     font-family: sans-serif;
-    min-width: 400px;
+    min-width: 1500px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-}
-.table_style thead tr {
+    margin-left: auto;
+    margin-right: auto;
+      
+  }
+  .table_style thead tr {
+    
     background-color: #009879;
     color: #ffffff;
     text-align: left;
-}
+  }
+  .button{  
+    font-family: 'open_sansregular';
+    width: 20%;
+    height: min-content;
+    background:rgba(3, 97, 99, 0.616);
+    color: #ffffff;
+    border-radius: 7px;
+    border: 0;
+    cursor: pointer;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: all 0.3s;
+    margin: 30px;
+    bottom: 5px;
+    position: absolute;
+    left: 39%;
+    
+  }
+  .button:hover { 
+  
+    background:#009879; 
+  }
+  .title{
+    
+    width: 50%;
+    
+    text-align: center;
+  
+    color: #009879;
+  
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+    }
+  
+  hr{
+    margin-top: -10px;
+    margin-bottom: 15px;
+  }

@@ -17,7 +17,7 @@
 
             if($usuario == "admin" && $senha=="123"){
                 $_SESSION["usuario"] = $usuario;
-                header("Location: register_pacient.php");
+                header("Location: ../php/register_pacient.php");
             }else{
                 $error="Login ou Senha Inválido!";
             }
@@ -25,7 +25,7 @@
     ?>
     <div id="login">
 
-        <form class="form" method="post" action="login.php">
+        <form class="form" method="post" action="../php/login.php">
         
 
             <div class="form-header">
@@ -58,9 +58,7 @@
 
                     <button type="submit" class="botao">Entrar</button>
                 </div>
-
-            <p style="color: red; font-size: 10px"><?=$error?></p>
-
+                <p align="center"style="color: red; font-size: 15px"><?=$error?></p>
             </form>
 
         </div>
