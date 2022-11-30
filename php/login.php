@@ -15,11 +15,11 @@
             $usuario = $_POST["usuario"];
             $senha = $_POST["senha"];
 
-            if($usuario == "admin" && $senha=="123"){
+            if($usuario == "admin123@gmail.com" && $senha=="123"){
                 $_SESSION["usuario"] = $usuario;
                 header("Location: ../php/register_pacient.php");
             }else{
-                $error="Login ou Senha Inválido!";
+                $error="E-mail ou Senha Inválido!";
             }
         }
     ?>
@@ -38,10 +38,10 @@
 
                 <div class="form-content-area">
 
-                    <label for="user">Usuário</label>
+                    <label for="user">E-mail</label>
 
-                    <input class="campo" type="text" name="usuario" autocomplete="off" placeholder="Insira seu nome de usuario">
-
+                    <input type="email" onblur="validarEmail()" onfocus="redefinirMsg()" id="email" name="usuario"  placeholder="Insira seu e-mail">
+                        <span id="error-email"></span>
                 </div>
 
                     <div class="form-content-area">

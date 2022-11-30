@@ -14,6 +14,7 @@ session_start();
   <meta name="viewport" content="width=device-width">
   <title>Pagina de cadastro</title>
   <link href="../css/register_pacient.css" rel="stylesheet" type="text/css" />
+  <script src="../js/validation.js" defer></script>
 </head>
 
 <body>
@@ -23,22 +24,22 @@ session_start();
         
         <label class="label">
             <span>Nome</span>
-            <input type="text" name="nome" class="campo" placeholder="Digite o nome do paciente" required=""/>
+            <input type="text" name="nome" id="nome" class="campo" placeholder="Digite o nome do paciente"/>
         </label>
         
         <label class="label">
             <span>Idade</span>
-            <input type="number" name="idade" class="campo" placeholder="Digite a idade do paciente" required=""/>
+            <input type="number" name="idade" class="campo" placeholder="Digite a idade do paciente" required number="idade"/>
         </label>
         
         <label class="label">
             <span>Peso</span>
-            <input type="number" step="0.01" name="peso" class="campo" placeholder="Digite o peso do paciente" required=""/>   
+            <input type="number" step="0.01" name="peso" class="campo" placeholder="Digite o peso do paciente" required number="peso"/>   
         </label>
         
           <label class="label">
             <span>Altura</span>
-            <input type="number" step="0.01" name="altura" class="campo" placeholder="Digite a altura do paciente" required=""/>   
+            <input type="number" step="0.01" name="altura" class="campo" placeholder="Digite a altura do paciente" required number="altura"/>   
         </label>
         
         <label class="label"> 
@@ -46,11 +47,8 @@ session_start();
             <input type="hidden" name="acao" value="cadastrar"> 
             <button  type="submit" class="botao"> Cadastrar </button>
         
-        
         </label>
-        
     </form>   
     <a href="exit.php">Sair</a>
 </body>
-
 </html>

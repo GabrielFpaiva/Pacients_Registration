@@ -61,9 +61,6 @@ session_start();
                $BANCODEDADOS="bancodados";
                $conect = mysqli_connect($SERVER,$USERNAME,$PASSWORD,$BANCODEDADOS,$PORT);
                //ver um jeito de criar banco de dados e tabelas sozinho
-               
-               
-               
                return $conect;
               }
                $conect=conexão();
